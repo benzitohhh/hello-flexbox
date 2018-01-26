@@ -1,4 +1,8 @@
 .item {
-  border: green;
+  border: 1px solid green;
   background-color: lightgreen;
+}
+
+.box {
+  display: flex;
 }
