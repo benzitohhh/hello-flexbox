@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index2.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <div class="header">
+      <button id="sidebar_toggle">toggle sidebar</button>
+      <button id="sidebar_fill">fill sidebar</button>
+      <button id="main_fill">fill main</button>
+    </div>
+    
+    <div class="box">
+      <div id="sidebar" class="item sidebar"></div>
+      <div id="main" class="item main"></div>
+    </div>
+    <div class="item footer"></div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>    
+    <script type="text/javascript" charset="utf-8">
+      $("#sidebar_toggle").click(function() {
+        $('#sidebar').toggleClass('sidebar--expanded')
+      })
+      $("#sidebar_fill").click(function() {
+        $('#sidebar').append("<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae fermentum metus, nec pulvinar lacus. Nunc rutrum, lorem at cursus sodales, velit urna ultrices dui, vel convallis augue orci quis justo. Maecenas id auctor sapien, nec fringilla dolor. Vestibulum venenatis nisi condimentum eros mollis sodales. Vivamus bibendum eros ligula, ut tristique metus condimentum at. Donec ac ultrices massa. Nulla dui magna, suscipit non dictum at, pellentesque luctus nibh. Phasellus congue est ut orci efficitur placerat. Integer ac mollis nisl, sed ullamcorper justo.</p>")
+      })
+      $("#main_fill").click(function() {
+        $('#main').append("<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis mauris quis placerat posuere. Sed est orci, elementum at commodo et, viverra a ligula. Quisque tristique porttitor augue, ut accumsan mauris gravida sit </p>")
+      })
+    </script>
+  </body>
+</html>
